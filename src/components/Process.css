@@ -1,0 +1,123 @@
+.process {
+  padding: var(--section-padding);
+  background: var(--bg-midnight);
+  position: relative;
+}
+
+.process::before,
+.process::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--grid-line), transparent);
+}
+.process::before { top: 0; }
+.process::after { bottom: 0; }
+
+.process__header {
+  text-align: center;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process__title {
+  font-size: clamp(32px, 4vw, 52px);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.process__subtitle {
+  font-size: 17px;
+  color: var(--text-secondary);
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.process__timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.process__step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.process__step-line {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.process__step-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(24, 239, 224, 0.08);
+  border: 1px solid rgba(24, 239, 224, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.process__connector {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(24,239,224,0.3), transparent);
+}
+
+.process__step-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.process__step-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.process__step-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.process__step-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .process__timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process__connector {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .process__timeline {
+    grid-template-columns: 1fr;
+  }
+}

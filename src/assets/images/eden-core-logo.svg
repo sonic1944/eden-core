@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1402" height="1122" viewBox="0 0 1402 1122" role="img" aria-labelledby="title desc">
+  <title id="title">EDEN-CORE logo</title>
+  <desc id="desc">Futuristic neon triangular circuit emblem above EDEN-CORE wordmark on a dark grid background.</desc>
+
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="72%">
+      <stop offset="0%" stop-color="#11184d"/>
+      <stop offset="58%" stop-color="#090c2d"/>
+      <stop offset="100%" stop-color="#060721"/>
+    </radialGradient>
+
+    <linearGradient id="neonGradient" x1="20%" y1="10%" x2="80%" y2="85%">
+      <stop offset="0%" stop-color="#18efe0"/>
+      <stop offset="45%" stop-color="#26b9ff"/>
+      <stop offset="100%" stop-color="#4525e6"/>
+    </linearGradient>
+
+    <linearGradient id="neonGradient2" x1="30%" y1="80%" x2="72%" y2="22%">
+      <stop offset="0%" stop-color="#1de8df"/>
+      <stop offset="48%" stop-color="#28baff"/>
+      <stop offset="100%" stop-color="#4424e0"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="textBlur"/>
+      <feMerge>
+        <feMergeNode in="textBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="113" height="113" patternUnits="userSpaceOnUse">
+      <path d="M113 0H0V113" fill="none" stroke="#26336d" stroke-width="1" opacity="0.16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1402" height="1122" fill="url(#bgGlow)"/>
+  <rect width="1402" height="1122" fill="url(#grid)"/>
+
+  <g filter="url(#softGlow)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer triangular frame -->
+    <polyline points="701,236 477,642 925,642 701,236" fill="none" stroke="url(#neonGradient)" stroke-width="31"/>
+    <line x1="477" y1="642" x2="925" y2="642" stroke="#3b22e6" stroke-width="31"/>
+
+    <!-- Corner rings -->
+    <circle cx="701" cy="236" r="36" fill="#090c2d" stroke="url(#neonGradient)" stroke-width="18"/>
+    <circle cx="477" cy="642" r="36" fill="#090c2d" stroke="url(#neonGradient)" stroke-width="18"/>
+    <circle cx="925" cy="642" r="36" fill="#090c2d" stroke="url(#neonGradient)" stroke-width="18"/>
+
+    <!-- Inner circuit triangle -->
+    <polyline points="535,612 701,344 867,612 790,612" fill="none" stroke="url(#neonGradient2)" stroke-width="24"/>
+    <polyline points="701,425 625,556 782,556 701,425" fill="none" stroke="url(#neonGradient2)" stroke-width="24"/>
+    <line x1="535" y1="612" x2="742" y2="612" stroke="#1de3dc" stroke-width="24"/>
+
+    <!-- Circuit nodes -->
+    <circle cx="626" cy="470" r="18" fill="#090c2d" stroke="url(#neonGradient2)" stroke-width="16"/>
+    <circle cx="811" cy="532" r="18" fill="#090c2d" stroke="url(#neonGradient2)" stroke-width="16"/>
+    <circle cx="742" cy="604" r="20" fill="#090c2d" stroke="url(#neonGradient2)" stroke-width="16"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="701" y="850"
+        text-anchor="middle"
+        fill="#b5b5d8"
+        opacity="0.32"
+        font-size="88"
+        font-family="Orbitron, Eurostile Extended, Bank Gothic, Arial Black, sans-serif"
+        font-weight="900"
+        letter-spacing="8">EDEN-CORE</text>
+
+  <text x="701" y="842"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-size="88"
+        font-family="Orbitron, Eurostile Extended, Bank Gothic, Arial Black, sans-serif"
+        font-weight="900"
+        letter-spacing="8"
+        filter="url(#textGlow)">EDEN-CORE</text>
+</svg>

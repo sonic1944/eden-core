@@ -1,16 +1,70 @@
-# React + Vite
+# Eden-Core Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium React/Vite website for Eden-Core — digital growth partner for SMEs.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+eden-core/
+├── index.html
+├── vite.config.js
+├── package.json
+├── public/
+│   └── favicon.svg
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── styles/
+    │   └── globals.css          ← CSS variables, base styles, utilities
+    ├── assets/
+    │   └── images/
+    │       ├── hero-network-bg.png   ← Hero section background (dark network/grid)
+    │       ├── hero-bg.png           ← Secondary hero visual
+    │       └── cta-bg.png            ← CTA section background (neon triangles)
+    └── components/
+        ├── Navbar.jsx / .css         ← Sticky navigation
+        ├── Hero.jsx / .css           ← Hero with background image + triangle SVG
+        ├── Services.jsx / .css       ← 5 service cards in 3-col grid
+        ├── WhyEdenCore.jsx / .css    ← Sticky left + 6-card right grid
+        ├── Process.jsx / .css        ← 6-step process timeline
+        ├── Packages.jsx / .css       ← 4 package cards (no prices shown)
+        ├── AIChatbot.jsx / .css      ← AI chatbot section with animated chat UI
+        ├── CTA.jsx / .css            ← Full CTA with neon bg image + contact info
+        └── Footer.jsx / .css         ← 4-column footer
+```
 
-## React Compiler
+## Setup & Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open: http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Brand Colors
+
+- Deep Navy: `#060721`
+- Cyan: `#18EFE0`
+- Electric Blue: `#26B9FF`
+- Neon Indigo: `#4525E6`
+
+All colors are defined as CSS variables in `src/styles/globals.css`.
+
+## Typography
+
+- **Display/Headings**: Syne (Google Fonts)
+- **Body**: DM Sans (Google Fonts)
+
+Both loaded via `<link>` in `index.html` — no install needed.
+
+## Contact
+
+Update `hello@eden-core.ch` in `CTA.jsx` and `Footer.jsx` with the real email address once confirmed.
