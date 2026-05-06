@@ -1,25 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 import logo from '../assets/images/eden-core-logo.svg'
 
-const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Why Eden-Core', href: '#why' },
-  { label: 'Process', href: '#process' },
-  { label: 'Packages', href: '#packages' },
-  { label: 'AI Integration', href: '#ai' },
-  { label: 'Contact', href: '#contact' },
-]
-
-const services = [
-  'Website Development',
-  'Web Applications',
-  'AI Chatbot Integration',
-  'Digital Consulting',
-  'Monthly Partnerships',
-]
+const navHrefs = ['#services','#why','#process','#packages','#ai','#contact']
+const serviceHrefs = ['#services','#services','#ai','#services','#packages']
 
 export default function Footer() {
+  const { t } = useTranslation()
+  const navLinks = t('footer.nav_links', { returnObjects: true })
+  const serviceLinks = t('footer.service_links', { returnObjects: true })
+
   return (
     <footer className="footer">
       <div className="footer__top-line" />
@@ -28,58 +19,45 @@ export default function Footer() {
           <div className="footer__logo">
             <img src={logo} alt="Eden-Core" className="footer__logo-img" />
           </div>
-          <p className="footer__tagline">
-            Digital growth partner for small and medium-sized enterprises. 
-            Websites, web applications, and ongoing digital support — built in Switzerland.
-          </p>
+          <p className="footer__tagline">{t('footer.tagline')}</p>
           <div className="footer__contact">
-            <a href="mailto:info@eden-core.com" className="footer__contact-link">
-              info@eden-core.com
-            </a>
+            <a href="mailto:info@eden-core.com" className="footer__contact-link">info@eden-core.com</a>
             <span className="footer__location">Rothenburg, Lucerne, CH</span>
           </div>
         </div>
 
         <div className="footer__nav-col">
-          <h4 className="footer__col-title">Navigation</h4>
+          <h4 className="footer__col-title">{t('footer.nav_title')}</h4>
           <ul className="footer__links">
-            {navLinks.map(link => (
-              <li key={link.label}>
-                <a href={link.href} className="footer__link">{link.label}</a>
-              </li>
+            {navLinks.map((label, i) => (
+              <li key={i}><a href={navHrefs[i]} className="footer__link">{label}</a></li>
             ))}
           </ul>
         </div>
 
         <div className="footer__nav-col">
-          <h4 className="footer__col-title">Services</h4>
+          <h4 className="footer__col-title">{t('footer.services_title')}</h4>
           <ul className="footer__links">
-            {services.map(s => (
-              <li key={s}>
-                <a href="#services" className="footer__link">{s}</a>
-              </li>
+            {serviceLinks.map((label, i) => (
+              <li key={i}><a href={serviceHrefs[i]} className="footer__link">{label}</a></li>
             ))}
           </ul>
         </div>
 
         <div className="footer__nav-col">
-          <h4 className="footer__col-title">Legal</h4>
+          <h4 className="footer__col-title">{t('footer.legal_title')}</h4>
           <ul className="footer__links">
-            <li><Link to="/legal-notice" className="footer__link">Legal Notice</Link></li>
-            <li><Link to="/privacy-policy" className="footer__link">Privacy Policy</Link></li>
-            <li><Link to="/terms" className="footer__link">Terms & Conditions</Link></li>
+            <li><Link to="/legal-notice" className="footer__link">{t('footer.legal_notice')}</Link></li>
+            <li><Link to="/privacy-policy" className="footer__link">{t('footer.privacy')}</Link></li>
+            <li><Link to="/terms" className="footer__link">{t('footer.terms')}</Link></li>
           </ul>
         </div>
       </div>
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <span className="footer__copy">
-            © {new Date().getFullYear()} Eden-Core. All rights reserved.
-          </span>
-          <span className="footer__built">
-            Built with precision in Switzerland 🇨🇭
-          </span>
+          <span className="footer__copy">© {new Date().getFullYear()} Eden-Core. {t('footer.copy')}</span>
+          <span className="footer__built">{t('footer.built')}</span>
         </div>
       </div>
     </footer>

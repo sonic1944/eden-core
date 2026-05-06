@@ -1,64 +1,49 @@
+import { useTranslation } from 'react-i18next'
 import heroBg from '../assets/images/hero-network-bg.png'
 import './Hero.css'
 
 export default function Hero() {
+  const { t } = useTranslation()
   return (
     <section className="hero" id="home">
-      {/* Background */}
       <div className="hero__bg" style={{ backgroundImage: `url(${heroBg})` }} />
       <div className="hero__overlay" />
-
-      {/* Gradient orbs */}
       <div className="hero__orb hero__orb--1" />
       <div className="hero__orb hero__orb--2" />
 
       <div className="hero__inner">
         <div className="hero__content">
-          <div className="section-label animate-fade-up">
-            Digital Growth Partner for SMEs
-          </div>
-
+          <div className="section-label animate-fade-up">{t('hero.label')}</div>
           <h1 className="hero__headline animate-fade-up-delay-1">
-            Your Business.<br />
-            <span className="gradient-text">Digitally Reimagined.</span>
+            {t('hero.headline_1')}<br />
+            <span className="gradient-text">{t('hero.headline_2')}</span>
           </h1>
-
-          <p className="hero__subheadline animate-fade-up-delay-2">
-            Eden-Core builds conversion-focused websites, modern web applications, 
-            and digital systems that turn your online presence into a measurable 
-            business asset. Based in Switzerland. Built for growth.
-          </p>
-
+          <p className="hero__subheadline animate-fade-up-delay-2">{t('hero.sub')}</p>
           <div className="hero__ctas animate-fade-up-delay-3">
             <a href="#contact" className="btn-primary">
-              Get a Consultation
+              {t('hero.cta_primary')}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </a>
-            <a href="#services" className="btn-secondary">
-              Explore Services
-            </a>
+            <a href="#services" className="btn-secondary">{t('hero.cta_secondary')}</a>
           </div>
-
-          {/* Trust indicators */}
           <div className="hero__stats animate-fade-up-delay-4">
             <div className="hero__stat">
-              <span className="hero__stat-value gradient-text">12-Month</span>
-              <span className="hero__stat-label">Growth Partnerships</span>
+              <span className="hero__stat-value gradient-text">{t('hero.stat1_value')}</span>
+              <span className="hero__stat-label">{t('hero.stat1_label')}</span>
             </div>
             <div className="hero__stat-divider" />
             <div className="hero__stat">
-              <span className="hero__stat-value gradient-text">Swiss</span>
-              <span className="hero__stat-label">Based & Operated</span>
+              <span className="hero__stat-value gradient-text">{t('hero.stat2_value')}</span>
+              <span className="hero__stat-label">{t('hero.stat2_label')}</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="hero__scroll">
-        <span>Scroll</span>
+        <span>{t('hero.scroll')}</span>
         <div className="hero__scroll-line" />
       </div>
     </section>

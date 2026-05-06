@@ -1,0 +1,296 @@
+{
+  "nav": {
+    "services": "Leistungen",
+    "why": "Warum wir",
+    "process": "Prozess",
+    "packages": "Pakete",
+    "contact": "Kontakt",
+    "cta": "Jetzt starten"
+  },
+  "hero": {
+    "label": "Digitaler Wachstumspartner für KMU",
+    "headline_1": "Ihr Unternehmen.",
+    "headline_2": "Digital neu gedacht.",
+    "sub": "Eden-Core entwickelt conversion-optimierte Websites, moderne Webanwendungen und digitale Systeme, die Ihre Online-Präsenz in ein messbares Geschäftswerkzeug verwandeln. Ansässig in der Schweiz. Gebaut für Wachstum.",
+    "cta_primary": "Beratung anfragen",
+    "cta_secondary": "Leistungen entdecken",
+    "stat1_value": "12 Monate",
+    "stat1_label": "Wachstumspartnerschaften",
+    "stat2_value": "Schweizer",
+    "stat2_label": "Herkunft & Betrieb",
+    "scroll": "Scrollen"
+  },
+  "services": {
+    "label": "Was wir tun",
+    "title_1": "Ein vollständiges Digital-Stack",
+    "title_2": "für wachsende Unternehmen",
+    "subtitle": "Von Ihrer ersten professionellen Website bis hin zu komplexen Webanwendungen — Eden-Core liefert die digitale Infrastruktur, die Ihr Unternehmen zum Wachsen braucht.",
+    "items": [
+      {
+        "title": "Website-Entwicklung",
+        "description": "Conversion-optimierte Websites, die auf Geschwindigkeit, Klarheit und Geschäftsergebnisse ausgelegt sind. Von lokalen Dienstleistern bis zu professionellen Unternehmen — konzipiert für Anfragen, nicht nur für Aufrufe.",
+        "features": ["Mobile-first Design", "Google Business Integration", "SEO-Grundlagen", "Klare Handlungsaufforderungen"]
+      },
+      {
+        "title": "Webanwendungen & Dashboards",
+        "description": "Massgeschneiderte Webanwendungen und interne Dashboards, wenn Ihr Unternehmen mehr als eine Website benötigt. Mit React und moderner Architektur gebaut — skalierbar, schnell und wartbar.",
+        "features": ["React-basierte Apps", "Interaktive Dashboards", "API-Integrationen", "Individuelle Logik"]
+      },
+      {
+        "title": "KI-Chatbot-Integration",
+        "description": "Fügen Sie Ihrer Website einen intelligenten KI-Assistenten hinzu, der Kundenanfragen bearbeitet, Leads qualifiziert und Fragen rund um die Uhr beantwortet — weniger Aufwand, besseres Nutzererlebnis.",
+        "features": ["Lead-Qualifizierung", "FAQ-Automatisierung", "Kundensupport", "24/7 Verfügbarkeit"]
+      },
+      {
+        "title": "Digitale Präsenz & Beratung",
+        "description": "Strategische Begleitung Ihrer digitalen Positionierung — von der Google Business Optimierung und lokalem SEO bis hin zu strukturierter Beratung, wie Sie online mehr Kunden gewinnen und konvertieren.",
+        "features": ["Google Business Einrichtung", "Lokale SEO-Strategie", "Wettbewerbsanalyse", "Conversion-Beratung"]
+      },
+      {
+        "title": "Wartung & Support",
+        "description": "Laufende Monatspartnerschaften, die Ihre digitale Präsenz aktuell, sicher und kontinuierlich verbessert halten. Leistungsüberwachung, Updates und regelmässige Analyseberichte inklusive.",
+        "features": ["Hosting & Wartung", "Monatliche Leistungsreviews", "Kleine Updates inklusive", "Prioritäts-Support"]
+      }
+    ]
+  },
+  "why": {
+    "label": "Warum Eden-Core",
+    "title_1": "Ein digitaler Partner.",
+    "title_2": "Nicht nur ein Entwickler.",
+    "desc": "Die meisten KMU beauftragen einen Entwickler und erhalten eine Website. Eden-Core liefert ein strategisches digitales System — konzipiert, um Kunden zu gewinnen, Vertrauen aufzubauen und mit Ihrem Unternehmen zu wachsen.",
+    "cta": "Gespräch starten",
+    "items": [
+      {
+        "title": "Strategie vor Code",
+        "description": "Jedes Projekt beginnt mit dem Verständnis Ihrer Geschäftsziele, Zielkunden und des Wettbewerbsumfelds. Wir bauen, was strategisch sinnvoll ist — nicht nur was gut aussieht."
+      },
+      {
+        "title": "Premium-Designstandard",
+        "description": "Ihre Website ist Ihr erster Eindruck. Eden-Core wendet dieselben Designprinzipien an wie führende Technologieunternehmen — damit Ihr KMU von Anfang an professionell und glaubwürdig wirkt."
+      },
+      {
+        "title": "Skalierbare technische Basis",
+        "description": "Sauberer, wartbarer Code, der mit Ihrem Unternehmen mitwächst. Keine aufgeblähten Plugins oder fragile Setups — nur solide Grundlagen für nachhaltige digitale Entwicklung."
+      },
+      {
+        "title": "Conversion-orientierte Umsetzung",
+        "description": "Jede Designentscheidung wird an einer Frage gemessen: Erhöht dies die Wahrscheinlichkeit, dass Besucher Kontakt aufnehmen? Struktur, Text und UX dienen Ihren Geschäftszielen."
+      },
+      {
+        "title": "Klare, direkte Kommunikation",
+        "description": "Keine Projektunklarheiten, kein verstecktes Scope-Creep. Eden-Core arbeitet mit strukturierten Angeboten, dokumentierten Lieferobjekten und professioneller Kommunikation."
+      },
+      {
+        "title": "Langfristiges Partnerschaftsmodell",
+        "description": "Wir verschwinden nicht nach dem Launch. Monatspartnerschaften bedeuten, dass Ihre digitale Präsenz sich kontinuierlich verbessert — mit Leistungsüberwachung, Updates und laufender Optimierung."
+      }
+    ]
+  },
+  "process": {
+    "label": "Wie wir arbeiten",
+    "title_1": "Ein klarer Prozess.",
+    "title_2": "Null Überraschungen.",
+    "subtitle": "Vom ersten Gespräch bis zur Live-Website — jeder Schritt ist strukturiert, transparent und auf Mehrwert ausgerichtet.",
+    "steps": [
+      {
+        "title": "Erstgespräch",
+        "description": "Wir beginnen mit einem kostenlosen Kennenlerngespräch, um Ihr Unternehmen, Ihre Ziele und Ihre aktuelle digitale Situation zu verstehen. Kein Druck, keine Verpflichtung."
+      },
+      {
+        "title": "Strategie & Struktur",
+        "description": "Wir definieren die Seitenstruktur, den Nutzerfluss und die strategische Ausrichtung. Jede Seite und jedes Element wird geplant, um Ihre Geschäftsziele zu unterstützen."
+      },
+      {
+        "title": "Designrichtung",
+        "description": "Visuelle Ausrichtung, Typografie und Markenabstimmung werden festgelegt. Sie genehmigen das Konzept, bevor eine einzige Zeile Code geschrieben wird."
+      },
+      {
+        "title": "Entwicklung",
+        "description": "Sauberer, schneller und gut strukturierter Code. Entwickelt mit HTML, CSS und JavaScript — oder React, wenn das Projekt es erfordert. Von Beginn an auf Performance optimiert."
+      },
+      {
+        "title": "Launch",
+        "description": "Wir kümmern uns um Hosting, Domain-Konfiguration, Google Business Einrichtung und Go-Live-Checks. Ihr Unternehmen startet mit allem verbunden und funktionsfähig."
+      },
+      {
+        "title": "Laufender Support",
+        "description": "Monatspartner erhalten regelmässige Leistungsreviews, Updates, SEO-Verbesserungen und direkten Zugang zu Eden-Core für Fragen und Änderungen."
+      }
+    ]
+  },
+  "packages": {
+    "label": "Lösungen",
+    "title_1": "Den richtigen",
+    "title_2": "Einstieg finden",
+    "subtitle": "Jedes Projekt wird individuell geplant. Diese Pakete zeigen typische Ausgangskonfigurationen — die endgültige Preisgestaltung wird nach Ihrer Beratung besprochen.",
+    "popular": "Am beliebtesten",
+    "note": "Alle Pakete beinhalten ein strukturiertes Angebot, klaren Umfang und professionellen Vertrag. Hybridpreismodell (reduziert upfront + monatlich) auf Anfrage erhältlich.",
+    "cta_quote": "Angebot anfragen",
+    "cta_consult": "Beratung buchen",
+    "items": [
+      {
+        "name": "Starter-Website",
+        "tag": "Lokale Präsenz",
+        "description": "Eine schnelle, professionelle Website für lokale Dienstleister, die eine glaubwürdige Online-Präsenz aufbauen möchten.",
+        "features": ["3–5 Seiten", "Mobile-first Design", "Google Business Integration", "Kontaktformular & CTA", "Basis-SEO-Einrichtung"]
+      },
+      {
+        "name": "Business-Website",
+        "tag": "Wachstumsbereit",
+        "description": "Eine lead-orientierte Website für etablierte KMU, die Besucher aktiv in Kunden verwandeln möchten.",
+        "features": ["5–10 Seiten", "Conversion-optimiertes Layout", "Analytics-Integration", "Geschwindigkeitsoptimierung", "Monatliche Partnerschaft möglich"]
+      },
+      {
+        "name": "Conversion-Website",
+        "tag": "Performance",
+        "description": "Erweiterte Website mit individuellen Integrationen, Buchungssystemen und vollständigem Digital-Präsenz-Setup für maximale Ergebnisse.",
+        "features": ["Individuelle Features & Integrationen", "Buchungs- oder Lead-System", "Mehrsprachige Option", "SEO + Texterstellung", "Laufende Partnerschaft"]
+      },
+      {
+        "name": "Individuelle Digitallösung",
+        "tag": "Enterprise",
+        "description": "Webanwendungen, Dashboards, KI-Chatbot-Integration oder massgeschneiderte digitale Systeme, angepasst an Ihre Geschäftslogik.",
+        "features": ["Web-App oder Dashboard", "KI-Chatbot-Integration", "Individuelle Geschäftslogik", "API-Integrationen", "Vollständiger technischer Umfang"]
+      }
+    ]
+  },
+  "ai": {
+    "label": "KI-Integration",
+    "title_1": "Verwandeln Sie Ihre Website in einen",
+    "title_2": "24/7-Vertriebsassistenten",
+    "desc": "Eden-Core kann einen intelligenten KI-Chatbot in jede Website integrieren, die wir entwickeln oder betreuen. Ihre Besucher erhalten sofortige Antworten, und Sie empfangen qualifizierte Anfragen — kein Rauschen.",
+    "cta": "KI zu meiner Website hinzufügen",
+    "addon_note": "Als Add-on zu jedem Projekt erhältlich",
+    "chat_assistant": "Eden-Core KI-Assistent",
+    "chat_badge": "KI-gestützt",
+    "chat_msg1": "Hallo! Ich bin der digitale Assistent dieses Unternehmens. Wie kann ich Ihnen heute helfen?",
+    "chat_msg2": "Welche Leistungen bieten Sie an?",
+    "chat_msg3": "Wir sind spezialisiert auf Webdesign, Wartung und lokales SEO. Möchten Sie ein kostenloses Erstgespräch buchen?",
+    "chat_msg4": "Ja, wie funktioniert das?",
+    "chat_input_placeholder": "Nachricht eingeben...",
+    "use_cases": [
+      {
+        "icon": "💬",
+        "title": "Kundensupport",
+        "description": "Beantwortet häufig gestellte Fragen sofort, 24 Stunden am Tag — ohne Ihren Aufwand."
+      },
+      {
+        "icon": "🎯",
+        "title": "Lead-Qualifizierung",
+        "description": "Erfasst die Absichten von Besuchern und qualifiziert Anfragen, bevor sie Ihren Posteingang oder Ihr Telefon erreichen."
+      },
+      {
+        "icon": "📅",
+        "title": "Terminbuchung",
+        "description": "Führt Besucher direkt auf Ihrer Website zur Buchung eines Beratungsgesprächs oder einer Dienstleistung."
+      },
+      {
+        "icon": "⚡",
+        "title": "Sofortantworten",
+        "description": "Beantwortet Produkt- oder Servicefragen in Sekunden — und hält potenzielle Kunden engagiert."
+      }
+    ]
+  },
+  "cta": {
+    "label": "Ihr Projekt starten",
+    "title_1": "Bereit, Ihren",
+    "title_2": "digitalen Kern aufzubauen?",
+    "desc": "Ob Sie eine professionelle Website, eine individuelle Webanwendung oder einen langfristigen digitalen Wachstumspartner benötigen — Eden-Core ist bereit, Ihr Projekt zu planen und echte Ergebnisse zu liefern.",
+    "btn_primary": "Projekt starten",
+    "btn_secondary": "Anfrage senden",
+    "location": "Rothenburg, Luzern, Schweiz",
+    "response": "Antwort innerhalb von 24 Stunden"
+  },
+  "footer": {
+    "tagline": "Digitaler Wachstumspartner für kleine und mittlere Unternehmen. Websites, Webanwendungen und laufender digitaler Support — entwickelt in der Schweiz.",
+    "nav_title": "Navigation",
+    "services_title": "Leistungen",
+    "legal_title": "Rechtliches",
+    "nav_links": ["Leistungen", "Warum Eden-Core", "Prozess", "Pakete", "KI-Integration", "Kontakt"],
+    "service_links": ["Website-Entwicklung", "Webanwendungen", "KI-Chatbot-Integration", "Digitale Beratung", "Monatspartnerschaften"],
+    "legal_notice": "Impressum",
+    "privacy": "Datenschutzerklärung",
+    "terms": "AGB",
+    "copy": "Alle Rechte vorbehalten.",
+    "built": "Mit Präzision in der Schweiz entwickelt 🇨🇭"
+  },
+  "legal": {
+    "privacy": {
+      "subtitle": "Rechtliches",
+      "title": "Datenschutzerklärung",
+      "s1_title": "Allgemeine Informationen",
+      "s1_p1": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung erläutert, wie Eden-Core personenbezogene Daten erhebt, verwendet und schützt, wenn Sie unsere Website besuchen oder mit uns Kontakt aufnehmen.",
+      "s1_p2": "Mit der Nutzung dieser Website erklären Sie sich mit den in dieser Datenschutzerklärung beschriebenen Praktiken einverstanden.",
+      "s2_title": "Verantwortliche Stelle",
+      "s3_title": "Erhebung personenbezogener Daten",
+      "s3_collect_intro": "Wir können personenbezogene Daten erheben, wenn Sie:",
+      "s3_collect": ["unsere Website besuchen", "Kontaktformulare ausfüllen", "uns per E-Mail kontaktieren", "eine Offerte oder Beratung anfordern", "mit Funktionen der Website interagieren"],
+      "s3_data_intro": "Zu den erhobenen Daten können gehören:",
+      "s3_data": ["Name", "E-Mail-Adresse", "Firmenname", "Telefonnummer", "IP-Adresse", "Browser- und Geräteinformationen", "Nutzungsdaten der Website"],
+      "s4_title": "Cookies",
+      "s4_p1": "Unsere Website verwendet Cookies und ähnliche Technologien, um die Benutzererfahrung zu verbessern, den Websiteverkehr zu analysieren und unsere Dienstleistungen zu optimieren.",
+      "s4_p2": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
+      "s4_p3": "Sie können Cookies über die Einstellungen Ihres Browsers kontrollieren oder deaktivieren.",
+      "s4_p4": "Bitte beachten Sie, dass das Deaktivieren von Cookies die Funktionalität bestimmter Bereiche der Website beeinträchtigen kann.",
+      "s5_title": "Google Analytics",
+      "s5_p1": "Diese Website verwendet Google Analytics, einen Webanalysedienst der Google LLC.",
+      "s5_p2": "Google Analytics verwendet Cookies, um zu analysieren, wie Besucher die Website nutzen. Die durch diese Cookies erzeugten Informationen können Folgendes umfassen:",
+      "s5_data": ["besuchte Seiten", "Verweildauer auf einzelnen Seiten", "Geräte- und Browserinformationen", "ungefähre geografische Standorte", "Interaktionsverhalten"],
+      "s5_p3": "Soweit anwendbar, kann eine IP-Anonymisierung aktiviert werden.",
+      "s5_p4": "Die erhobenen Informationen können an Server von Google übertragen und dort gespeichert werden.",
+      "s5_p5": "Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie:",
+      "s5_prevent": ["Ihre Cookie-Einstellungen anpassen", "Browser-Erweiterungen verwenden, die Tracking-Technologien blockieren"],
+      "s5_more": "Weitere Informationen:",
+      "s6_title": "Kontaktformulare und Kommunikation",
+      "s6_p1": "Wenn Sie uns über ein Kontaktformular oder per E-Mail kontaktieren, werden die von Ihnen bereitgestellten Informationen zum Zweck der Bearbeitung Ihrer Anfrage sowie für mögliche Folgekommunikation gespeichert.",
+      "s6_p2": "Wir verkaufen keine personenbezogenen Daten an Dritte.",
+      "s7_title": "Hosting und technische Dienstleister",
+      "s7_p1": "Unsere Website kann über externe Hosting- und Infrastruktur-Dienstleister betrieben werden. Technische Daten wie IP-Adressen, Browserinformationen und Server-Logs können aus Sicherheits- und Betriebsgründen verarbeitet werden.",
+      "s7_p2": "Wir arbeiten mit Dienstleistern zusammen, die angemessene Sicherheitsmassnahmen implementieren.",
+      "s8_title": "Speicherdauer",
+      "s8_p1": "Personenbezogene Daten werden nur so lange gespeichert, wie dies für die in dieser Datenschutzerklärung beschriebenen Zwecke oder aufgrund gesetzlicher Vorgaben erforderlich ist.",
+      "s9_title": "Ihre Rechte",
+      "s9_intro": "Je nach anwendbarem Datenschutzrecht haben Sie möglicherweise das Recht:",
+      "s9_rights": ["Auskunft über Ihre personenbezogenen Daten zu verlangen", "die Berichtigung unrichtiger Daten zu verlangen", "die Löschung Ihrer Daten zu verlangen", "bestimmten Datenverarbeitungen zu widersprechen", "eine erteilte Einwilligung zu widerrufen"],
+      "s9_p2": "Anfragen können per E-Mail eingereicht werden.",
+      "s10_title": "Datensicherheit",
+      "s10_p1": "Wir treffen angemessene technische und organisatorische Sicherheitsmassnahmen, um personenbezogene Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder Offenlegung zu schützen.",
+      "s10_p2": "Dennoch ist keine Methode der Datenübertragung oder Speicherung im Internet vollständig sicher.",
+      "s11_title": "Externe Links",
+      "s11_p1": "Unsere Website kann Links zu externen Websites enthalten. Wir übernehmen keine Verantwortung für die Datenschutzpraktiken oder Inhalte solcher Drittanbieter-Websites.",
+      "s12_title": "Änderungen dieser Datenschutzerklärung",
+      "s12_p1": "Wir behalten uns vor, diese Datenschutzerklärung jederzeit anzupassen, um rechtliche, technische oder betriebliche Änderungen zu berücksichtigen.",
+      "s12_p2": "Es gilt jeweils die aktuelle auf dieser Website veröffentlichte Version.",
+      "s13_title": "Kontakt",
+      "s13_p1": "Bei Fragen zu dieser Datenschutzerklärung oder zum Datenschutz kontaktieren Sie uns bitte unter:"
+    },
+    "notice": {
+      "subtitle": "Impressum",
+      "title": "Impressum",
+      "s1_title": "Angaben gemäss Schweizer Recht",
+      "s2_title": "Vertretungsberechtigte Person",
+      "s3_title": "Haftungsausschluss",
+      "s3_p1": "Der Inhalt dieser Website wurde mit grösstmöglicher Sorgfalt erstellt. Dennoch übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Inhalte.",
+      "s3_p2": "Haftungsansprüche gegen Eden-Core wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen entstanden sind, werden ausgeschlossen.",
+      "s4_title": "Haftung für Links",
+      "s4_p1": "Diese Website kann Links zu externen Websites Dritter enthalten. Für deren Inhalte übernehmen wir keine Verantwortung. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.",
+      "s5_title": "Urheberrechte",
+      "s5_p1": "Die auf dieser Website veröffentlichten Inhalte, Bilder, Designs, Texte und Dateien unterliegen dem Urheberrecht und anderen Schutzrechten.",
+      "s5_p2": "Jegliche Verwendung, Vervielfältigung oder Weitergabe ohne ausdrückliche schriftliche Zustimmung von Eden-Core ist untersagt.",
+      "s6_title": "Kontakt"
+    },
+    "terms": {
+      "subtitle": "Rechtliches",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "placeholder": "Dieser Abschnitt wird derzeit vorbereitet. Die vollständigen AGB werden in Kürze hier veröffentlicht. Bei Fragen wenden Sie sich bitte an",
+      "coming_soon": "Inhalt für diesen Abschnitt wird in Kürze hinzugefügt.",
+      "sections": [
+        "Geltungsbereich", "Leistungen", "Vertragsabschluss",
+        "Preise & Zahlung", "Projektlieferung & Abnahme", "Pflichten des Auftraggebers",
+        "Geistiges Eigentum & Nutzungsrechte", "Vertraulichkeit",
+        "Gewährleistung & Haftung", "Bedingungen der Monatspartnerschaft",
+        "Kündigung", "Anwendbares Recht & Gerichtsstand", "Änderungen"
+      ]
+    }
+  }
+}

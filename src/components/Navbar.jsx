@@ -1,19 +1,15 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
+import { useTranslation } from 'react-i18next'
 import './Navbar.css'
 
-const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Why Us', href: '#why' },
-  { label: 'Process', href: '#process' },
-  { label: 'Packages', href: '#packages' },
-  { label: 'Contact', href: '#contact' },
-]
-
 export default function Navbar() {
+  const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const currentLang = i18n.language?.startsWith('de') ? 'de' : 'en'
+  const toggleLang = () => i18n.changeLanguage(currentLang === 'en' ? 'de' : 'en')
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 40)
@@ -21,10 +17,17 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handler)
   }, [])
 
+  const navLinks = [
+    { label: t('nav.services'), href: '#services' },
+    { label: t('nav.why'),      href: '#why' },
+    { label: t('nav.process'),  href: '#process' },
+    { label: t('nav.packages'), href: '#packages' },
+    { label: t('nav.contact'),  href: '#contact' },
+  ]
+
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
-        {/* Logo */}
         <Link to="/" className="navbar__logo">
           <svg width="48" height="48" viewBox="477 236 448 430" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -54,21 +57,21 @@ export default function Navbar() {
           <span className="navbar__logo-text">EDEN-CORE</span>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="navbar__links">
           {navLinks.map(link => (
-            <a key={link.label} href={link.href} className="navbar__link">
-              {link.label}
-            </a>
+            <a key={link.label} href={link.href} className="navbar__link">{link.label}</a>
           ))}
         </nav>
 
-        {/* CTA */}
-        <a href="#contact" className="btn-primary navbar__cta">
-          Get Started
-        </a>
+        <div className="navbar__actions">
+          <button className="lang-toggle" onClick={toggleLang} aria-label="Switch language">
+            <span className={currentLang === 'en' ? 'lang-toggle__active' : ''}>EN</span>
+            <span className="lang-toggle__sep">|</span>
+            <span className={currentLang === 'de' ? 'lang-toggle__active' : ''}>DE</span>
+          </button>
+          <a href="#contact" className="btn-primary navbar__cta">{t('nav.cta')}</a>
+        </div>
 
-        {/* Mobile Toggle */}
         <button
           className={`navbar__toggle ${menuOpen ? 'open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -78,22 +81,21 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="navbar__mobile">
           {navLinks.map(link => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="navbar__mobile-link"
-              onClick={() => setMenuOpen(false)}
-            >
+            <a key={link.label} href={link.href} className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary" onClick={() => setMenuOpen(false)}>
-            Get Started
-          </a>
+          <div className="navbar__mobile-bottom">
+            <button className="lang-toggle" onClick={toggleLang}>
+              <span className={currentLang === 'en' ? 'lang-toggle__active' : ''}>EN</span>
+              <span className="lang-toggle__sep">|</span>
+              <span className={currentLang === 'de' ? 'lang-toggle__active' : ''}>DE</span>
+            </button>
+            <a href="#contact" className="btn-primary" onClick={() => setMenuOpen(false)}>{t('nav.cta')}</a>
+          </div>
         </div>
       )}
     </header>

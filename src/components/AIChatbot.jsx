@@ -1,116 +1,70 @@
+import { useTranslation } from 'react-i18next'
 import './AIChatbot.css'
 
-const useCases = [
-  {
-    icon: '💬',
-    title: 'Customer Support',
-    description: 'Answers frequently asked questions instantly, 24 hours a day — without you lifting a finger.',
-  },
-  {
-    icon: '🎯',
-    title: 'Lead Qualification',
-    description: 'Captures visitor intent and qualifies enquiries before they reach your inbox or phone.',
-  },
-  {
-    icon: '📅',
-    title: 'Booking Assistance',
-    description: 'Guides visitors toward booking a consultation or service appointment directly from your site.',
-  },
-  {
-    icon: '⚡',
-    title: 'Instant Responses',
-    description: 'Responds to product or service questions in seconds — keeping potential customers engaged.',
-  },
-]
-
 export default function AIChatbot() {
+  const { t } = useTranslation()
+  const useCases = t('ai.use_cases', { returnObjects: true })
+
   return (
     <section className="ai-chatbot" id="ai">
       <div className="container">
         <div className="ai-chatbot__layout">
-          {/* Left: Chat UI mockup */}
           <div className="ai-chatbot__demo">
             <div className="chat-window glass-card">
               <div className="chat-header">
                 <div className="chat-status">
                   <div className="chat-dot" />
-                  <span>Eden-Core AI Assistant</span>
+                  <span>{t('ai.chat_assistant')}</span>
                 </div>
-                <span className="chat-badge">AI-Powered</span>
+                <span className="chat-badge">{t('ai.chat_badge')}</span>
               </div>
               <div className="chat-messages">
                 <div className="chat-msg chat-msg--bot">
                   <div className="chat-msg__avatar">
                     <svg width="16" height="16" viewBox="0 0 100 100" fill="none">
-                      <defs>
-                        <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="#18EFE0"/>
-                          <stop offset="100%" stopColor="#4525E6"/>
-                        </linearGradient>
-                      </defs>
+                      <defs><linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#18EFE0"/><stop offset="100%" stopColor="#4525E6"/></linearGradient></defs>
                       <polygon points="50,8 92,88 8,88" stroke="url(#cg)" strokeWidth="10" fill="none"/>
                     </svg>
                   </div>
-                  <div className="chat-msg__bubble">
-                    Hi! I'm the digital assistant for this business. How can I help you today?
-                  </div>
+                  <div className="chat-msg__bubble">{t('ai.chat_msg1')}</div>
                 </div>
                 <div className="chat-msg chat-msg--user">
-                  <div className="chat-msg__bubble">
-                    What services do you offer?
-                  </div>
+                  <div className="chat-msg__bubble">{t('ai.chat_msg2')}</div>
                 </div>
                 <div className="chat-msg chat-msg--bot">
                   <div className="chat-msg__avatar">
-                    <svg width="16" height="16" viewBox="0 0 100 100" fill="none">
-                      <polygon points="50,8 92,88 8,88" stroke="#18EFE0" strokeWidth="10" fill="none"/>
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 100 100" fill="none"><polygon points="50,8 92,88 8,88" stroke="#18EFE0" strokeWidth="10" fill="none"/></svg>
                   </div>
-                  <div className="chat-msg__bubble">
-                    We specialise in website design, maintenance, and local SEO. Would you like to book a free consultation?
-                  </div>
+                  <div className="chat-msg__bubble">{t('ai.chat_msg3')}</div>
                 </div>
                 <div className="chat-msg chat-msg--user">
-                  <div className="chat-msg__bubble">
-                    Yes, how does that work?
-                  </div>
+                  <div className="chat-msg__bubble">{t('ai.chat_msg4')}</div>
                 </div>
                 <div className="chat-msg chat-msg--bot typing">
                   <div className="chat-msg__avatar">
-                    <svg width="16" height="16" viewBox="0 0 100 100" fill="none">
-                      <polygon points="50,8 92,88 8,88" stroke="#18EFE0" strokeWidth="10" fill="none"/>
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 100 100" fill="none"><polygon points="50,8 92,88 8,88" stroke="#18EFE0" strokeWidth="10" fill="none"/></svg>
                   </div>
                   <div className="chat-msg__bubble">
-                    <span className="typing-dot" />
-                    <span className="typing-dot" />
-                    <span className="typing-dot" />
+                    <span className="typing-dot" /><span className="typing-dot" /><span className="typing-dot" />
                   </div>
                 </div>
               </div>
               <div className="chat-input">
-                <input type="text" placeholder="Type a message..." readOnly />
+                <input type="text" placeholder={t('ai.chat_input_placeholder')} readOnly />
                 <button className="chat-send">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/>
-                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Right: Content */}
           <div className="ai-chatbot__content">
-            <div className="section-label">AI Integration</div>
+            <div className="section-label">{t('ai.label')}</div>
             <h2 className="ai-chatbot__title">
-              Turn Your Website Into a<br />
-              <span className="gradient-text">24/7 Sales Assistant</span>
+              {t('ai.title_1')}<br />
+              <span className="gradient-text">{t('ai.title_2')}</span>
             </h2>
-            <p className="ai-chatbot__desc">
-              Eden-Core can integrate an intelligent AI chatbot into any website we build or manage. 
-              Your visitors get instant answers, and you receive qualified enquiries — not noise.
-            </p>
-
+            <p className="ai-chatbot__desc">{t('ai.desc')}</p>
             <div className="ai-chatbot__use-cases">
               {useCases.map((uc, i) => (
                 <div key={i} className="ai-chatbot__use-case">
@@ -122,12 +76,9 @@ export default function AIChatbot() {
                 </div>
               ))}
             </div>
-
             <div className="ai-chatbot__cta-row">
-              <a href="#contact" className="btn-primary">
-                Add AI to My Website
-              </a>
-              <span className="ai-chatbot__note">Available as an add-on to any project</span>
+              <a href="#contact" className="btn-primary">{t('ai.cta')}</a>
+              <span className="ai-chatbot__note">{t('ai.addon_note')}</span>
             </div>
           </div>
         </div>
