@@ -65,6 +65,4 @@ All colors are defined as CSS variables in `src/styles/globals.css`.
 
 Both loaded via `<link>` in `index.html` — no install needed.
 
-## Contact
 
-Update `hello@eden-core.ch` in `CTA.jsx` and `Footer.jsx` with the real email address once confirmed.

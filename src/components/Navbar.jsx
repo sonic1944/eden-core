@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import './Navbar.css'
 
@@ -24,7 +25,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         {/* Logo */}
-        <a href="#" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           <svg width="48" height="48" viewBox="477 236 448 430" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="navGrad1" x1="20%" y1="10%" x2="80%" y2="85%">
@@ -51,7 +52,7 @@ export default function Navbar() {
             <circle cx="742" cy="604" r="20" fill="#090c2d" stroke="url(#navGrad2)" strokeWidth="16"/>
           </svg>
           <span className="navbar__logo-text">EDEN-CORE</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="navbar__links">

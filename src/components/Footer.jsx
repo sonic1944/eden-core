@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import logo from '../assets/images/eden-core-logo.svg'
 
@@ -64,9 +65,9 @@ export default function Footer() {
         <div className="footer__nav-col">
           <h4 className="footer__col-title">Legal</h4>
           <ul className="footer__links">
-            <li><a href="#" className="footer__link">Impressum</a></li>
-            <li><a href="#" className="footer__link">Privacy Policy</a></li>
-            <li><a href="#" className="footer__link">Terms & Conditions</a></li>
+            <li><Link to="/legal-notice" className="footer__link">Legal Notice</Link></li>
+            <li><Link to="/privacy-policy" className="footer__link">Privacy Policy</Link></li>
+            <li><Link to="/terms" className="footer__link">Terms & Conditions</Link></li>
           </ul>
         </div>
       </div>
