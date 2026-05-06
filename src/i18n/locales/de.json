@@ -29,27 +29,52 @@
       {
         "title": "Website-Entwicklung",
         "description": "Conversion-optimierte Websites, die auf Geschwindigkeit, Klarheit und Geschäftsergebnisse ausgelegt sind. Von lokalen Dienstleistern bis zu professionellen Unternehmen — konzipiert für Anfragen, nicht nur für Aufrufe.",
-        "features": ["Mobile-first Design", "Google Business Integration", "SEO-Grundlagen", "Klare Handlungsaufforderungen"]
+        "features": [
+          "Mobile-first Design",
+          "Google Business Integration",
+          "SEO-Grundlagen",
+          "Klare Handlungsaufforderungen"
+        ]
       },
       {
         "title": "Webanwendungen & Dashboards",
         "description": "Massgeschneiderte Webanwendungen und interne Dashboards, wenn Ihr Unternehmen mehr als eine Website benötigt. Mit React und moderner Architektur gebaut — skalierbar, schnell und wartbar.",
-        "features": ["React-basierte Apps", "Interaktive Dashboards", "API-Integrationen", "Individuelle Logik"]
+        "features": [
+          "React-basierte Apps",
+          "Interaktive Dashboards",
+          "API-Integrationen",
+          "Individuelle Logik"
+        ]
       },
       {
         "title": "KI-Chatbot-Integration",
         "description": "Fügen Sie Ihrer Website einen intelligenten KI-Assistenten hinzu, der Kundenanfragen bearbeitet, Leads qualifiziert und Fragen rund um die Uhr beantwortet — weniger Aufwand, besseres Nutzererlebnis.",
-        "features": ["Lead-Qualifizierung", "FAQ-Automatisierung", "Kundensupport", "24/7 Verfügbarkeit"]
+        "features": [
+          "Lead-Qualifizierung",
+          "FAQ-Automatisierung",
+          "Kundensupport",
+          "24/7 Verfügbarkeit"
+        ]
       },
       {
         "title": "Digitale Präsenz & Beratung",
         "description": "Strategische Begleitung Ihrer digitalen Positionierung — von der Google Business Optimierung und lokalem SEO bis hin zu strukturierter Beratung, wie Sie online mehr Kunden gewinnen und konvertieren.",
-        "features": ["Google Business Einrichtung", "Lokale SEO-Strategie", "Wettbewerbsanalyse", "Conversion-Beratung"]
+        "features": [
+          "Google Business Einrichtung",
+          "Lokale SEO-Strategie",
+          "Wettbewerbsanalyse",
+          "Conversion-Beratung"
+        ]
       },
       {
         "title": "Wartung & Support",
         "description": "Laufende Monatspartnerschaften, die Ihre digitale Präsenz aktuell, sicher und kontinuierlich verbessert halten. Leistungsüberwachung, Updates und regelmässige Analyseberichte inklusive.",
-        "features": ["Hosting & Wartung", "Monatliche Leistungsreviews", "Kleine Updates inklusive", "Prioritäts-Support"]
+        "features": [
+          "Hosting & Wartung",
+          "Monatliche Leistungsreviews",
+          "Kleine Updates inklusive",
+          "Prioritäts-Support"
+        ]
       }
     ]
   },
@@ -132,25 +157,49 @@
         "name": "Starter-Website",
         "tag": "Lokale Präsenz",
         "description": "Eine schnelle, professionelle Website für lokale Dienstleister, die eine glaubwürdige Online-Präsenz aufbauen möchten.",
-        "features": ["3–5 Seiten", "Mobile-first Design", "Google Business Integration", "Kontaktformular & CTA", "Basis-SEO-Einrichtung"]
+        "features": [
+          "3–5 Seiten",
+          "Mobile-first Design",
+          "Google Business Integration",
+          "Kontaktformular & CTA",
+          "Basis-SEO-Einrichtung"
+        ]
       },
       {
         "name": "Business-Website",
         "tag": "Wachstumsbereit",
         "description": "Eine lead-orientierte Website für etablierte KMU, die Besucher aktiv in Kunden verwandeln möchten.",
-        "features": ["5–10 Seiten", "Conversion-optimiertes Layout", "Analytics-Integration", "Geschwindigkeitsoptimierung", "Monatliche Partnerschaft möglich"]
+        "features": [
+          "5–10 Seiten",
+          "Conversion-optimiertes Layout",
+          "Analytics-Integration",
+          "Geschwindigkeitsoptimierung",
+          "Monatliche Partnerschaft möglich"
+        ]
       },
       {
         "name": "Conversion-Website",
         "tag": "Performance",
         "description": "Erweiterte Website mit individuellen Integrationen, Buchungssystemen und vollständigem Digital-Präsenz-Setup für maximale Ergebnisse.",
-        "features": ["Individuelle Features & Integrationen", "Buchungs- oder Lead-System", "Mehrsprachige Option", "SEO + Texterstellung", "Laufende Partnerschaft"]
+        "features": [
+          "Individuelle Features & Integrationen",
+          "Buchungs- oder Lead-System",
+          "Mehrsprachige Option",
+          "SEO + Texterstellung",
+          "Laufende Partnerschaft"
+        ]
       },
       {
         "name": "Individuelle Digitallösung",
         "tag": "Enterprise",
         "description": "Webanwendungen, Dashboards, KI-Chatbot-Integration oder massgeschneiderte digitale Systeme, angepasst an Ihre Geschäftslogik.",
-        "features": ["Web-App oder Dashboard", "KI-Chatbot-Integration", "Individuelle Geschäftslogik", "API-Integrationen", "Vollständiger technischer Umfang"]
+        "features": [
+          "Web-App oder Dashboard",
+          "KI-Chatbot-Integration",
+          "Individuelle Geschäftslogik",
+          "API-Integrationen",
+          "Vollständiger technischer Umfang"
+        ]
       }
     ]
   },
@@ -206,8 +255,21 @@
     "nav_title": "Navigation",
     "services_title": "Leistungen",
     "legal_title": "Rechtliches",
-    "nav_links": ["Leistungen", "Warum Eden-Core", "Prozess", "Pakete", "KI-Integration", "Kontakt"],
-    "service_links": ["Website-Entwicklung", "Webanwendungen", "KI-Chatbot-Integration", "Digitale Beratung", "Monatspartnerschaften"],
+    "nav_links": [
+      "Leistungen",
+      "Warum Eden-Core",
+      "Prozess",
+      "Pakete",
+      "KI-Integration",
+      "Kontakt"
+    ],
+    "service_links": [
+      "Website-Entwicklung",
+      "Webanwendungen",
+      "KI-Chatbot-Integration",
+      "Digitale Beratung",
+      "Monatspartnerschaften"
+    ],
     "legal_notice": "Impressum",
     "privacy": "Datenschutzerklärung",
     "terms": "AGB",
@@ -224,9 +286,23 @@
       "s2_title": "Verantwortliche Stelle",
       "s3_title": "Erhebung personenbezogener Daten",
       "s3_collect_intro": "Wir können personenbezogene Daten erheben, wenn Sie:",
-      "s3_collect": ["unsere Website besuchen", "Kontaktformulare ausfüllen", "uns per E-Mail kontaktieren", "eine Offerte oder Beratung anfordern", "mit Funktionen der Website interagieren"],
+      "s3_collect": [
+        "unsere Website besuchen",
+        "Kontaktformulare ausfüllen",
+        "uns per E-Mail kontaktieren",
+        "eine Offerte oder Beratung anfordern",
+        "mit Funktionen der Website interagieren"
+      ],
       "s3_data_intro": "Zu den erhobenen Daten können gehören:",
-      "s3_data": ["Name", "E-Mail-Adresse", "Firmenname", "Telefonnummer", "IP-Adresse", "Browser- und Geräteinformationen", "Nutzungsdaten der Website"],
+      "s3_data": [
+        "Name",
+        "E-Mail-Adresse",
+        "Firmenname",
+        "Telefonnummer",
+        "IP-Adresse",
+        "Browser- und Geräteinformationen",
+        "Nutzungsdaten der Website"
+      ],
       "s4_title": "Cookies",
       "s4_p1": "Unsere Website verwendet Cookies und ähnliche Technologien, um die Benutzererfahrung zu verbessern, den Websiteverkehr zu analysieren und unsere Dienstleistungen zu optimieren.",
       "s4_p2": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
@@ -235,11 +311,20 @@
       "s5_title": "Google Analytics",
       "s5_p1": "Diese Website verwendet Google Analytics, einen Webanalysedienst der Google LLC.",
       "s5_p2": "Google Analytics verwendet Cookies, um zu analysieren, wie Besucher die Website nutzen. Die durch diese Cookies erzeugten Informationen können Folgendes umfassen:",
-      "s5_data": ["besuchte Seiten", "Verweildauer auf einzelnen Seiten", "Geräte- und Browserinformationen", "ungefähre geografische Standorte", "Interaktionsverhalten"],
+      "s5_data": [
+        "besuchte Seiten",
+        "Verweildauer auf einzelnen Seiten",
+        "Geräte- und Browserinformationen",
+        "ungefähre geografische Standorte",
+        "Interaktionsverhalten"
+      ],
       "s5_p3": "Soweit anwendbar, kann eine IP-Anonymisierung aktiviert werden.",
       "s5_p4": "Die erhobenen Informationen können an Server von Google übertragen und dort gespeichert werden.",
       "s5_p5": "Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie:",
-      "s5_prevent": ["Ihre Cookie-Einstellungen anpassen", "Browser-Erweiterungen verwenden, die Tracking-Technologien blockieren"],
+      "s5_prevent": [
+        "Ihre Cookie-Einstellungen anpassen",
+        "Browser-Erweiterungen verwenden, die Tracking-Technologien blockieren"
+      ],
       "s5_more": "Weitere Informationen:",
       "s6_title": "Kontaktformulare und Kommunikation",
       "s6_p1": "Wenn Sie uns über ein Kontaktformular oder per E-Mail kontaktieren, werden die von Ihnen bereitgestellten Informationen zum Zweck der Bearbeitung Ihrer Anfrage sowie für mögliche Folgekommunikation gespeichert.",
@@ -251,7 +336,13 @@
       "s8_p1": "Personenbezogene Daten werden nur so lange gespeichert, wie dies für die in dieser Datenschutzerklärung beschriebenen Zwecke oder aufgrund gesetzlicher Vorgaben erforderlich ist.",
       "s9_title": "Ihre Rechte",
       "s9_intro": "Je nach anwendbarem Datenschutzrecht haben Sie möglicherweise das Recht:",
-      "s9_rights": ["Auskunft über Ihre personenbezogenen Daten zu verlangen", "die Berichtigung unrichtiger Daten zu verlangen", "die Löschung Ihrer Daten zu verlangen", "bestimmten Datenverarbeitungen zu widersprechen", "eine erteilte Einwilligung zu widerrufen"],
+      "s9_rights": [
+        "Auskunft über Ihre personenbezogenen Daten zu verlangen",
+        "die Berichtigung unrichtiger Daten zu verlangen",
+        "die Löschung Ihrer Daten zu verlangen",
+        "bestimmten Datenverarbeitungen zu widersprechen",
+        "eine erteilte Einwilligung zu widerrufen"
+      ],
       "s9_p2": "Anfragen können per E-Mail eingereicht werden.",
       "s10_title": "Datensicherheit",
       "s10_p1": "Wir treffen angemessene technische und organisatorische Sicherheitsmassnahmen, um personenbezogene Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder Offenlegung zu schützen.",
@@ -285,12 +376,27 @@
       "placeholder": "Dieser Abschnitt wird derzeit vorbereitet. Die vollständigen AGB werden in Kürze hier veröffentlicht. Bei Fragen wenden Sie sich bitte an",
       "coming_soon": "Inhalt für diesen Abschnitt wird in Kürze hinzugefügt.",
       "sections": [
-        "Geltungsbereich", "Leistungen", "Vertragsabschluss",
-        "Preise & Zahlung", "Projektlieferung & Abnahme", "Pflichten des Auftraggebers",
-        "Geistiges Eigentum & Nutzungsrechte", "Vertraulichkeit",
-        "Gewährleistung & Haftung", "Bedingungen der Monatspartnerschaft",
-        "Kündigung", "Anwendbares Recht & Gerichtsstand", "Änderungen"
+        "Geltungsbereich",
+        "Leistungen",
+        "Vertragsabschluss",
+        "Preise & Zahlung",
+        "Projektlieferung & Abnahme",
+        "Pflichten des Auftraggebers",
+        "Geistiges Eigentum & Nutzungsrechte",
+        "Vertraulichkeit",
+        "Gewährleistung & Haftung",
+        "Bedingungen der Monatspartnerschaft",
+        "Kündigung",
+        "Anwendbares Recht & Gerichtsstand",
+        "Änderungen"
       ]
     }
+  },
+  "cookies": {
+    "title": "Wir verwenden Cookies",
+    "desc": "Wir nutzen Google Analytics, um zu verstehen, wie Besucher unsere Website nutzen und Ihr Erlebnis zu verbessern. Sie können das Tracking akzeptieren oder ablehnen. Weitere Details finden Sie in unserer",
+    "policy_link": "Datenschutzerklärung",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
   }
 }
