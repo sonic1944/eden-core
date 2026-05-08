@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './Footer.css'
 import logo from '../assets/images/eden-core-logo.svg'
@@ -10,6 +10,21 @@ export default function Footer() {
   const { t } = useTranslation()
   const navLinks = t('footer.nav_links', { returnObjects: true })
   const serviceLinks = t('footer.service_links', { returnObjects: true })
+
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleNavClick = (e, hash) => {
+    e.preventDefault()
+    if (location.pathname === '/') {
+      document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/')
+      setTimeout(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }
 
   return (
     <footer className="footer">
@@ -30,7 +45,10 @@ export default function Footer() {
           <h4 className="footer__col-title">{t('footer.nav_title')}</h4>
           <ul className="footer__links">
             {navLinks.map((label, i) => (
-              <li key={i}><a href={navHrefs[i]} className="footer__link">{label}</a></li>
+              <li key={i}>
+                <a href={navHrefs[i]} className="footer__link"
+                  onClick={(e) => handleNavClick(e, navHrefs[i])}>{label}</a>
+              </li>
             ))}
           </ul>
         </div>
@@ -39,7 +57,10 @@ export default function Footer() {
           <h4 className="footer__col-title">{t('footer.services_title')}</h4>
           <ul className="footer__links">
             {serviceLinks.map((label, i) => (
-              <li key={i}><a href={serviceHrefs[i]} className="footer__link">{label}</a></li>
+              <li key={i}>
+                <a href={serviceHrefs[i]} className="footer__link"
+                  onClick={(e) => handleNavClick(e, serviceHrefs[i])}>{label}</a>
+              </li>
             ))}
           </ul>
         </div>

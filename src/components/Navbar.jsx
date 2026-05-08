@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './Navbar.css'
 
@@ -10,12 +10,29 @@ export default function Navbar() {
 
   const currentLang = i18n.language?.startsWith('de') ? 'de' : 'en'
   const toggleLang = () => i18n.changeLanguage(currentLang === 'en' ? 'de' : 'en')
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', handler)
     return () => window.removeEventListener('scroll', handler)
   }, [])
+
+  const handleNavClick = (e, hash) => {
+    e.preventDefault()
+    setMenuOpen(false)
+    if (location.pathname === '/') {
+      // Already on home — just scroll
+      document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      // On a different page — navigate home, then scroll after render
+      navigate('/')
+      setTimeout(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }
 
   const navLinks = [
     { label: t('nav.services'), href: '#services' },
@@ -28,7 +45,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
-        <Link to="/" className="navbar__logo">
+        <Link to="/" className="navbar__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <svg width="48" height="48" viewBox="477 236 448 430" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="navGrad1" x1="20%" y1="10%" x2="80%" y2="85%">
@@ -59,7 +76,8 @@ export default function Navbar() {
 
         <nav className="navbar__links">
           {navLinks.map(link => (
-            <a key={link.label} href={link.href} className="navbar__link">{link.label}</a>
+            <a key={link.label} href={link.href} className="navbar__link"
+              onClick={(e) => handleNavClick(e, link.href)}>{link.label}</a>
           ))}
         </nav>
 
@@ -69,7 +87,8 @@ export default function Navbar() {
             <span className="lang-toggle__sep">|</span>
             <span className={currentLang === 'de' ? 'lang-toggle__active' : ''}>DE</span>
           </button>
-          <a href="#contact" className="btn-primary navbar__cta">{t('nav.cta')}</a>
+          <a href="#contact" className="btn-primary navbar__cta"
+            onClick={(e) => handleNavClick(e, '#contact')}>{t('nav.cta')}</a>
         </div>
 
         <button
@@ -84,7 +103,8 @@ export default function Navbar() {
       {menuOpen && (
         <div className="navbar__mobile">
           {navLinks.map(link => (
-            <a key={link.label} href={link.href} className="navbar__mobile-link" onClick={() => setMenuOpen(false)}>
+            <a key={link.label} href={link.href} className="navbar__mobile-link"
+              onClick={(e) => handleNavClick(e, link.href)}>
               {link.label}
             </a>
           ))}
