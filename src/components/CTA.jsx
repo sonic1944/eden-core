@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import ctaBg from '../assets/images/cta-bg.png'
 import './CTA.css'
 
-export default function CTA() {
+export default function CTA({ onStartProject }) {
   const { t } = useTranslation()
   return (
     <section className="cta-section" id="contact">
@@ -17,11 +17,19 @@ export default function CTA() {
           </h2>
           <p className="cta-section__desc">{t('cta.desc')}</p>
           <div className="cta-section__actions">
-            <a href="mailto:info@eden-core.com" className="btn-primary cta-section__btn-main">
+            <button
+              className="btn-primary cta-section__btn-main"
+              onClick={onStartProject}
+            >
               {t('cta.btn_primary')}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a
+              href="mailto:info@eden-core.com"
+              className="btn-secondary cta-section__btn-sec"
+            >
+              {t('cta.btn_secondary')}
             </a>
-            <a href="mailto:info@eden-core.com" className="btn-secondary cta-section__btn-sec">{t('cta.btn_secondary')}</a>
           </div>
           <div className="cta-section__info">
             <div className="cta-info-item">

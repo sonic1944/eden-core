@@ -3,7 +3,7 @@ import './Packages.css'
 
 const highlights = [false, true, false, false]
 
-export default function Packages() {
+export default function Packages({ onRequestQuote }) {
   const { t } = useTranslation()
   const items = t('packages.items', { returnObjects: true })
 
@@ -33,10 +33,13 @@ export default function Packages() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className={highlights[i] ? 'btn-primary packages__btn' : 'btn-outline packages__btn'}>
+              <button
+                className={highlights[i] ? 'btn-primary packages__btn' : 'btn-outline packages__btn'}
+                onClick={() => onRequestQuote(pkg.name)}
+              >
                 {i === 3 ? t('packages.cta_consult') : t('packages.cta_quote')}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              </button>
             </div>
           ))}
         </div>

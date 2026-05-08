@@ -398,5 +398,28 @@
     "policy_link": "Privacy Policy",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Request a Quote",
+    "subtitle": "Tell us about your project and we'll get back to you within 24 hours.",
+    "name": "Full Name",
+    "name_placeholder": "John Smith",
+    "company": "Company Name",
+    "company_placeholder": "Your company (optional)",
+    "email": "Email Address",
+    "email_placeholder": "you@company.com",
+    "phone": "Phone Number",
+    "phone_placeholder": "+41 79 000 00 00 (optional)",
+    "package": "Package of Interest",
+    "package_placeholder": "Select a package...",
+    "message": "Additional Information",
+    "message_placeholder": "Tell us about your project, timeline, or any specific requirements...",
+    "submit": "Send Request",
+    "submitting": "Sending...",
+    "error": "Something went wrong. Please try again or email us directly at info@eden-core.com.",
+    "success_title": "Request Sent!",
+    "success_desc": "Thank you for reaching out. We'll review your request and get back to you within 24 hours.",
+    "success_close": "Close"
   }
 }
