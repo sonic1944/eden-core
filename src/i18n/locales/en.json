@@ -372,23 +372,109 @@
     },
     "terms": {
       "subtitle": "Legal",
-      "title": "Terms & Conditions",
-      "placeholder": "This section is currently being prepared. The full Terms & Conditions will be published here shortly. For any questions in the meantime, please contact us at",
-      "coming_soon": "Content for this section will be added shortly.",
+      "title": "General Terms & Conditions",
+      "intro": "for Services Provided by Eden-Core",
+      "acceptance": "By commissioning Eden-Core, the client accepts these GTC.",
       "sections": [
-        "Scope of Application",
-        "Services",
-        "Conclusion of Contract",
-        "Prices & Payment",
-        "Project Delivery & Acceptance",
-        "Client Obligations",
-        "Intellectual Property & Usage Rights",
-        "Confidentiality",
-        "Warranty & Liability",
-        "Monthly Partnership Terms",
-        "Termination",
-        "Governing Law & Jurisdiction",
-        "Amendments"
+        {
+          "num": "01",
+          "title": "Scope",
+          "content": "These General Terms and Conditions (GTC) apply to all services, offers, projects, and ongoing partnerships provided by Eden-Core to its clients.",
+          "list": []
+        },
+        {
+          "num": "02",
+          "title": "Services",
+          "content": "Eden-Core provides services including:",
+          "list": [
+            "Web design and web development",
+            "Development of digital platforms and applications",
+            "Maintenance and technical support",
+            "Hosting-related services",
+            "SEO and performance optimization",
+            "Analytics and tracking integrations",
+            "Copywriting and content creation",
+            "AI and automation solutions",
+            "Ongoing digital partnerships and retainer services"
+          ]
+        },
+        {
+          "num": "03",
+          "title": "Offers and Contract Formation",
+          "content": "Offers provided by Eden-Core are non-binding unless explicitly stated otherwise. A contract is formed by written confirmation, acceptance of an offer, electronic consent, or commencement of project work by Eden-Core.",
+          "list": []
+        },
+        {
+          "num": "04",
+          "title": "Pricing and Payment Terms",
+          "content": "All prices are stated in Swiss Francs (CHF) unless otherwise specified. Standard payment structure:",
+          "list": [
+            "30–50% upfront payment upon project start",
+            "Additional milestone payments depending on project progress",
+            "Final payment before launch or final handover"
+          ],
+          "footer": "Recurring services and retainers are invoiced monthly in advance. Invoices are payable within 30 days without deduction unless otherwise agreed."
+        },
+        {
+          "num": "05",
+          "title": "Client Responsibilities",
+          "content": "The client agrees to provide all required materials, information, and access credentials in a timely manner. The client is solely responsible for the legality of all provided content.",
+          "list": []
+        },
+        {
+          "num": "06",
+          "title": "Project Process and Acceptance",
+          "content": "After completion, the client is given the opportunity to review the agreed services. Unless substantial defects are reported in writing within 7 days, the services shall be deemed accepted.",
+          "list": []
+        },
+        {
+          "num": "07",
+          "title": "Intellectual Property and Usage Rights",
+          "content": "All rights to concepts, designs, source code, graphics, texts, and developments remain with Eden-Core until full payment has been received. After full payment, the client receives the agreed usage rights.",
+          "list": []
+        },
+        {
+          "num": "08",
+          "title": "Third-Party Providers and External Services",
+          "content": "Eden-Core may work with third-party providers and external platforms. Eden-Core assumes no liability for outages, failures, or security issues caused by third-party providers.",
+          "list": []
+        },
+        {
+          "num": "09",
+          "title": "Liability",
+          "content": "Eden-Core is only liable for damages caused intentionally or through gross negligence. Liability for indirect damages, data loss, or loss of profit is excluded.",
+          "list": []
+        },
+        {
+          "num": "10",
+          "title": "Availability and Maintenance",
+          "content": "Uninterrupted or permanent availability cannot be guaranteed.",
+          "list": []
+        },
+        {
+          "num": "11",
+          "title": "Data Protection",
+          "content": "The processing of personal data is governed by Eden-Core's separate Privacy Policy.",
+          "list": []
+        },
+        {
+          "num": "12",
+          "title": "Termination of Ongoing Services",
+          "content": "Unless otherwise agreed, a notice period of 30 days to the end of a month applies.",
+          "list": []
+        },
+        {
+          "num": "13",
+          "title": "Final Provisions",
+          "content": "Swiss law shall apply exclusively. The place of jurisdiction is Lucerne, Switzerland.",
+          "list": []
+        },
+        {
+          "num": "14",
+          "title": "Contact",
+          "content": "",
+          "list": []
+        }
       ]
     }
   },

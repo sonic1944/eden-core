@@ -5,6 +5,7 @@
   align-items: center;
   overflow: hidden;
   padding-top: 80px;
+  padding-bottom: 100px; /* ensure scroll indicator is always visible */
 }
 
 .hero__bg {
@@ -58,7 +59,8 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  padding: 40px 48px 80px 80px;
+  padding: 40px 48px 40px 80px;
+  width: 100%;
 }
 
 .hero__content {
@@ -123,11 +125,10 @@
   background: var(--glass-border);
 }
 
-
 /* Scroll indicator */
 .hero__scroll {
   position: absolute;
-  bottom: 40px;
+  bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -146,29 +147,47 @@
 
 .hero__scroll-line {
   width: 1px;
-  height: 40px;
+  height: 32px;
   background: linear-gradient(to bottom, var(--cyan), transparent);
   animation: fadeInUp 1.5s ease infinite;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
   .hero__inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
     text-align: center;
+    padding: 40px 32px 40px 32px;
+    justify-content: center;
   }
   .hero__content {
     align-items: center;
-  }
-  .hero__visual {
-    display: none;
   }
   .hero__stats {
     justify-content: center;
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
+  .hero {
+    padding-bottom: 120px; /* more room for scroll indicator on mobile */
+    min-height: 100svh;    /* use small viewport height on mobile browsers */
+  }
+  .hero__inner {
+    padding: 24px 20px 32px 20px;
+    align-items: flex-start;
+  }
+  .hero__content {
+    align-items: center;
+    width: 100%;
+  }
+  .hero__headline {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+  .hero__subheadline {
+    font-size: 15px;
+    text-align: center;
+  }
   .hero__ctas {
     flex-direction: column;
     width: 100%;
@@ -176,5 +195,17 @@
   .hero__ctas a {
     width: 100%;
     justify-content: center;
+  }
+  .hero__stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .hero__stat-divider {
+    width: 40px;
+    height: 1px;
+  }
+  .hero__scroll {
+    bottom: 20px;
   }
 }

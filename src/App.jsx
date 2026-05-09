@@ -4,6 +4,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import LegalNotice from './pages/LegalNotice'
 import TermsConditions from './pages/TermsConditions'
 import CookieBanner from './components/CookieBanner'
+import ChatWidget from './components/ChatWidget'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/terms" element={<TermsConditions />} />
       </Routes>
       <CookieBanner />
+      <ChatWidget />
     </BrowserRouter>
   )
 }

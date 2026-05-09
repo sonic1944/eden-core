@@ -373,22 +373,108 @@
     "terms": {
       "subtitle": "Rechtliches",
       "title": "Allgemeine Geschäftsbedingungen",
-      "placeholder": "Dieser Abschnitt wird derzeit vorbereitet. Die vollständigen AGB werden in Kürze hier veröffentlicht. Bei Fragen wenden Sie sich bitte an",
-      "coming_soon": "Inhalt für diesen Abschnitt wird in Kürze hinzugefügt.",
+      "intro": "für Dienstleistungen von Eden-Core",
+      "acceptance": "Mit der Beauftragung von Eden-Core akzeptiert der Kunde diese AGB.",
       "sections": [
-        "Geltungsbereich",
-        "Leistungen",
-        "Vertragsabschluss",
-        "Preise & Zahlung",
-        "Projektlieferung & Abnahme",
-        "Pflichten des Auftraggebers",
-        "Geistiges Eigentum & Nutzungsrechte",
-        "Vertraulichkeit",
-        "Gewährleistung & Haftung",
-        "Bedingungen der Monatspartnerschaft",
-        "Kündigung",
-        "Anwendbares Recht & Gerichtsstand",
-        "Änderungen"
+        {
+          "num": "01",
+          "title": "Geltungsbereich",
+          "content": "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für sämtliche Dienstleistungen, Angebote, Projekte und laufenden Partnerschaften von Eden-Core gegenüber Kunden.",
+          "list": []
+        },
+        {
+          "num": "02",
+          "title": "Dienstleistungen",
+          "content": "Eden-Core bietet insbesondere folgende Dienstleistungen an:",
+          "list": [
+            "Webdesign und Webentwicklung",
+            "Entwicklung von digitalen Plattformen und Anwendungen",
+            "Wartung und technische Betreuung",
+            "Hosting-nahe Dienstleistungen",
+            "SEO- und Performance-Optimierung",
+            "Analytics- und Tracking-Integrationen",
+            "Copywriting und Content-Erstellung",
+            "AI- und Automatisierungslösungen",
+            "Laufende digitale Partnerschaften und Retainer-Modelle"
+          ]
+        },
+        {
+          "num": "03",
+          "title": "Angebot und Vertragsabschluss",
+          "content": "Angebote von Eden-Core sind freibleibend und unverbindlich, sofern nicht ausdrücklich anders vereinbart. Ein Vertrag kommt zustande durch schriftliche Bestätigung, Annahme einer Offerte, elektronische Zustimmung oder Beginn der Projektarbeit durch Eden-Core.",
+          "list": []
+        },
+        {
+          "num": "04",
+          "title": "Preise und Zahlungsbedingungen",
+          "content": "Alle Preise verstehen sich in Schweizer Franken (CHF), sofern nicht anders angegeben. Standardmässig gilt:",
+          "list": [
+            "30–50 % Anzahlung bei Projektstart",
+            "Weitere Teilzahlungen gemäss Projektfortschritt",
+            "Restzahlung vor finaler Übergabe oder Livegang"
+          ],
+          "footer": "Wiederkehrende Dienstleistungen und Retainer werden monatlich im Voraus verrechnet. Rechnungen sind innerhalb von 30 Tagen ohne Abzüge zahlbar, sofern nichts anderes vereinbart wurde."
+        },
+        {
+          "num": "05",
+          "title": "Mitwirkungspflichten des Kunden",
+          "content": "Der Kunde verpflichtet sich, alle für das Projekt erforderlichen Informationen, Inhalte, Zugangsdaten und Materialien rechtzeitig bereitzustellen. Der Kunde ist verantwortlich für die Rechtmässigkeit aller bereitgestellten Inhalte.",
+          "list": []
+        },
+        {
+          "num": "06",
+          "title": "Projektablauf und Abnahme",
+          "content": "Nach Fertigstellung erhält der Kunde die Möglichkeit zur Prüfung der vereinbarten Leistungen. Sofern innerhalb von 7 Tagen keine wesentlichen Mängel schriftlich gemeldet werden, gelten die Leistungen als abgenommen.",
+          "list": []
+        },
+        {
+          "num": "07",
+          "title": "Nutzungsrechte und geistiges Eigentum",
+          "content": "Sämtliche Rechte an Konzepten, Designs, Quellcodes, Grafiken, Texten und Entwicklungen verbleiben bis zur vollständigen Bezahlung bei Eden-Core. Nach vollständigem Zahlungseingang erhält der Kunde die vereinbarten Nutzungsrechte.",
+          "list": []
+        },
+        {
+          "num": "08",
+          "title": "Drittanbieter und externe Dienste",
+          "content": "Eden-Core arbeitet teilweise mit Drittanbietern und externen Plattformen. Für Leistungen, Ausfälle oder Sicherheitsprobleme solcher Drittanbieter übernimmt Eden-Core keine Haftung.",
+          "list": []
+        },
+        {
+          "num": "09",
+          "title": "Haftung",
+          "content": "Eden-Core haftet ausschliesslich für vorsätzlich oder grob fahrlässig verursachte Schäden. Jegliche Haftung für indirekte Schäden, Datenverluste oder entgangenen Gewinn wird ausgeschlossen.",
+          "list": []
+        },
+        {
+          "num": "10",
+          "title": "Verfügbarkeit und Wartung",
+          "content": "Eine permanente oder unterbrechungsfreie Verfügbarkeit kann nicht garantiert werden.",
+          "list": []
+        },
+        {
+          "num": "11",
+          "title": "Datenschutz",
+          "content": "Die Bearbeitung personenbezogener Daten erfolgt gemäss der separaten Datenschutzerklärung von Eden-Core.",
+          "list": []
+        },
+        {
+          "num": "12",
+          "title": "Kündigung laufender Dienstleistungen",
+          "content": "Sofern keine separate Vereinbarung besteht, gilt eine Kündigungsfrist von 30 Tagen auf Monatsende.",
+          "list": []
+        },
+        {
+          "num": "13",
+          "title": "Schlussbestimmungen",
+          "content": "Es gilt ausschliesslich schweizerisches Recht. Gerichtsstand ist Luzern, Schweiz.",
+          "list": []
+        },
+        {
+          "num": "14",
+          "title": "Kontakt",
+          "content": "",
+          "list": []
+        }
       ]
     }
   },

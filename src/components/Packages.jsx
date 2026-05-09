@@ -1,7 +1,17 @@
 import { useTranslation } from 'react-i18next'
 import './Packages.css'
 
+const CALENDLY_URL = 'https://calendly.com/nedeni-eden-core/30min'
 const highlights = [false, true, false, false]
+const isEnterprise = [false, false, false, true]
+
+function openCalendly() {
+  if (window.Calendly) {
+    window.Calendly.initPopupWidget({ url: CALENDLY_URL })
+  } else {
+    window.open(CALENDLY_URL, '_blank')
+  }
+}
 
 export default function Packages({ onRequestQuote }) {
   const { t } = useTranslation()
@@ -35,9 +45,9 @@ export default function Packages({ onRequestQuote }) {
               </ul>
               <button
                 className={highlights[i] ? 'btn-primary packages__btn' : 'btn-outline packages__btn'}
-                onClick={() => onRequestQuote(pkg.name)}
+                onClick={() => isEnterprise[i] ? openCalendly() : onRequestQuote(pkg.name)}
               >
-                {i === 3 ? t('packages.cta_consult') : t('packages.cta_quote')}
+                {isEnterprise[i] ? t('packages.cta_consult') : t('packages.cta_quote')}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </button>
             </div>
