@@ -1,5 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk'
-import { knowledge } from '../src/assistant/assistantKnowledge.js'
+import { knowledge } from './assistantKnowledge.js'
 
 const client = new Anthropic({
   apiKey: process.env.edencore_ai_assistant,
