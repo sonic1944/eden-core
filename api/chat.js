@@ -1,5 +1,5 @@
-import Anthropic from '@anthropic-ai/sdk'
-import { knowledge } from './assistantKnowledge.js'
+const Anthropic = require('@anthropic-ai/sdk')
+const { knowledge } = require('./assistantKnowledge.js')
 
 const client = new Anthropic({
   apiKey: process.env.edencore_ai_assistant,
@@ -28,8 +28,7 @@ ${JSON.stringify(knowledge, null, 2)}
 
 Always respond in the same language the user is writing in. If they write in German, respond in German. If they write in English, respond in English.`
 
-export default async function handler(req, res) {
-  // CORS headers
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
